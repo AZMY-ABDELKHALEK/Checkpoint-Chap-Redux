@@ -3,10 +3,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import { addTask, editTask, toggleTask, setFilter } from './Actions/Actions';
 import AddTask from './Components/AddTask';
 import ListTask from './Components/ListTask';
+import "./App.css"
 
 const App = () => {
-  const tasks = useSelector((state) => state.tasks);
-  const filter = useSelector((state) => state.filter);
+  const tasks = useSelector((state) => state.reducer.tasks);
+  const filter = useSelector((state) => state.reducer.filter);
   const dispatch = useDispatch();
 
   const handleAdd = (task) => dispatch(addTask(task));

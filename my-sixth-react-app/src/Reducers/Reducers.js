@@ -6,7 +6,7 @@ const initialState = {
       { id: 4, description: "I'll go to the Gym at 18:00", isDone: false },
       { id: 5, description: 'Shower at home after GYM', isDone: false },
     ],
-    filter: 'ALL', // Possible values: 'ALL', 'DONE', 'NOT_DONE'
+    filter: 'ALL', 
   };
   
   const reducer = (state = initialState, action) => {
